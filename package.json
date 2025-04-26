@@ -1,13 +1,6 @@
 {
-  "name": "react-spring-bottom-sheet",
-  "description": "✨ Accessible, 🪄 Delightful, and 🤯 Performant. Built on react-spring for the web, and react-use-gesture.",
+  "name": "@h4wldev/react-spring-bottom-sheet",
   "license": "MIT",
-  "author": "Cody Olsen",
-  "homepage": "https://react-spring-bottom-sheet.cocody.dev",
-  "repository": "stipsan/react-spring-bottom-sheet",
-  "bugs": {
-    "url": "https://github.com/stipsan/react-spring-bottom-sheet/issues"
-  },
   "version": "3.4.1",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
