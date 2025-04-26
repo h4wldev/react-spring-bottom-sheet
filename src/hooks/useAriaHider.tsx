@@ -12,7 +12,7 @@ export function useAriaHider({
     activate: () => {
       throw new TypeError('Tried to activate aria hider too early')
     },
-    deactivate: () => {},
+    deactivate: () => { },
   })
 
   useDebugValue(enabled ? 'Enabled' : 'Disabled')
@@ -20,7 +20,7 @@ export function useAriaHider({
   useEffect(() => {
     if (!enabled) {
       ref.current.deactivate()
-      ref.current = { activate: () => {}, deactivate: () => {} }
+      ref.current = { activate: () => { }, deactivate: () => { } }
       return
     }
 
@@ -37,9 +37,10 @@ export function useAriaHider({
         const parentNode = target.parentNode
 
         document.querySelectorAll('body > *').forEach((node) => {
-          if (node === parentNode) {
+          if (node === parentNode || node.classList.contains('ignore-aria-hidden')) {
             return
           }
+
           let attr = node.getAttribute('aria-hidden')
           let alreadyHidden = attr !== null && attr !== 'false'
           if (alreadyHidden) {
