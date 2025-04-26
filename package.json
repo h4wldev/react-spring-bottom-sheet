@@ -1,7 +1,7 @@
 {
   "name": "@h4wldev/react-spring-bottom-sheet",
   "license": "MIT",
-  "version": "3.4.1",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "files": [
